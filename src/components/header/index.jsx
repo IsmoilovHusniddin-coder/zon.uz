@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const { data } = useSelector((state) => state.cartSlice);
+  const { like } = useSelector((state) => state.likeSlice);
   return (
     <>
       <header>
@@ -160,9 +161,11 @@ const Header = () => {
                 </svg>
               </Link>
             </Badge>
-            <Link to={"./like"} className="text-[20px]">
-              <FaRegHeart />
-            </Link>
+            <Badge count={like.length}>
+              <Link to={"./like"} className="text-[22.5px]">
+                <FaRegHeart />
+              </Link>
+            </Badge>
             <svg
               width="21"
               height="21"
