@@ -11,3 +11,11 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.wrapp {
+  text-wrap: nowrap;
+}
+
+.over {
+  overflow-x: auto;
+}

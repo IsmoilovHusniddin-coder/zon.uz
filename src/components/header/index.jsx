@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Badge } from "antd";
 import { FaRegHeart } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import Category from "../../components/category";
 
 const Header = () => {
   const { data } = useSelector((state) => state.cartSlice);
@@ -204,6 +205,9 @@ const Header = () => {
               Войти
             </button>
           </div>
+        </div>
+        <div className="containerss">
+          <Category />
         </div>
       </header>
     </>
